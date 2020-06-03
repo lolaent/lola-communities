@@ -1,0 +1,11 @@
+package.json
+package-lock.json
+.next
+lib
+es
+umd
+.git
+.cache
+node_modules
+public
+yarn.lock

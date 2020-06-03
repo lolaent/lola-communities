@@ -1,0 +1,14 @@
+# Project dependencies & Build directory
+.cache
+node_modules
+yarn-error.log
+.DS_Store
+.next
+.env
+
+# IDE settings
+.idea/
+
+# Some recommended ignores, if not used feel free to remove
+/npm-debug.log
+out/
