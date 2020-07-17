@@ -11,7 +11,7 @@ class MyApp extends App {
     return (
       <>
         <Head>
-          <title>{`Lola Communities`}</title>
+          <title>Lola Communities</title>
           <meta
             name="Description"
             content="Lola communities is a place to keep in touch with your favourite tech community"

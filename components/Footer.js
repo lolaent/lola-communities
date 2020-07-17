@@ -1,16 +1,13 @@
 import React from 'react'
+import styled from 'styled-components'
 
-const navBarStyle = {
-  backgroundColor: 'lightpink',
-  color: 'white',
-  width: '100%',
-  height: '60px',
-}
+const FooterContainer = styled.div`
+  color: darkred;
+  height: 60px;
+  width: 100%;
+  background-color: papayawhip;
+`
 
-const Footer = () => (
-  <div className="NavBar" style={navBarStyle}>
-    Footer
-  </div>
-)
+const Footer = () => <FooterContainer>Footer</FooterContainer>
 
 export default Footer
