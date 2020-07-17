@@ -1,18 +1,20 @@
-import NavBar from './NavBar'
 import React from 'react'
+import styled from 'styled-components'
 
-const headerStyle = {
-  backgroundColor: 'lightBlue',
-  color: 'white',
-  width: '100%',
-  height: '50px',
-  display: 'flex',
-}
+import NavBar from './NavBar'
+
+const HeaderContainer = styled.div`
+  background-color: lightBlue;
+  color: white;
+  width: 100%;
+  height: 50px;
+  display: flex;
+`
 
 const Header = () => (
-  <div style={headerStyle}>
+  <HeaderContainer>
     <NavBar />
-  </div>
+  </HeaderContainer>
 )
 
 export default Header

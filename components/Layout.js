@@ -1,24 +1,23 @@
 import React from 'react'
+import styled from 'styled-components'
 
-const layoutStyle = {
-  display: 'flex',
-  flexDirection: 'column',
-  height: '100%',
-  width: '100%',
-}
+const LayoutContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+`
 
-const contentStyle = {
-  flex: 1,
-  display: 'flex',
-  flexDirection: 'column',
-}
+const Content = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+`
 
 const Layout = (props) => (
-  <div className="Layout" style={layoutStyle}>
-    <div className="Content" style={contentStyle}>
-      {props.children}
-    </div>
-  </div>
+  <LayoutContainer>
+    <Content>{props.children}</Content>
+  </LayoutContainer>
 )
 
 export default Layout

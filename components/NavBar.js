@@ -1,33 +1,34 @@
 import React from 'react'
 import Link from 'next/link'
+import styled from 'styled-components'
 
-const navBarStyle = {
-  backgroundColor: 'lightblue',
-  color: 'white',
-  width: '100%',
-  display: 'flex',
-  justifyContent: 'space-evenly',
-}
+const NavBarContainer = styled.nav`
+  background-color: lightblue;
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+`
 
-const navItemStyle = {
-  color: 'white',
-}
+const NavBarItem = styled.a`
+  color: white;
+`
 
 export default () => (
-  <nav style={navBarStyle}>
+  <NavBarContainer>
     <div>
       <Link href="/">
-        <a title="Home" style={navItemStyle}>
+        <NavBarItem title="Home">
           <h1>Home</h1>
-        </a>
+        </NavBarItem>
       </Link>
     </div>
     <div>
       <Link href="/communities/apage">
-        <a title="A Page" style={navItemStyle}>
+        <NavBarItem title="A Page">
           <h1>A Page</h1>
-        </a>
+        </NavBarItem>
       </Link>
     </div>
-  </nav>
+  </NavBarContainer>
 )
