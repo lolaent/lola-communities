@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import React, { Component } from 'react'
-import { attributes, react as HomeContent } from '../content/home.md'
-import Layout from '../components/Layout'
+import { attributes, react as HomeContent } from '../../content/aPage.md'
+import Layout from '../../components/Layout'
 
 export default class Home extends Component {
   render() {
