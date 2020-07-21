@@ -20,7 +20,7 @@ Netlify's way of updating content is through commits since the content  as well 
 
 `Vercel` is wired up to the repo and automatically deploys to production any changes done to `master`. 
 
-Later on we may add other branches like dev/qa but that shouldn't be needed as Vercel can also deploy & serve from a commit.
+Vercel will also deploy & serve from a commit/branch.
 
 # Using the CMS
 
@@ -41,13 +41,14 @@ The app has the nextJS structure + the Netlify integration which works in the fo
 - there is a `config.yml` in which stores the configuration for Netlify, there you'll find endpoints and settings for Netlify as well as the collection model for each page
 - for each page the data is stored in markdown files `.md` and the data has to correspond to the declared model from config.yml
 - the pages are created using simple react components and consume the data stored in the `.md` files
+- for styling there is a generic `normalize.css` file which contains normalizing css for most browser inconsistencies & the styling in the app is done using `styled components`
 
 ## Dev things to keep in mind
 
 This setup is in no way set in stone, currently it's just an initial setup so feel free to add/ modify things.
 
 - need to fix the # at the end of the admin URLS
-- add css & perhaps grid system
+- add perhaps grid system
 - dig more into how the pages should be structured
 - need to start implementing some common components for common elements found in the design once it exists
 - add media storing service for images, can be done in many ways, `cloudinary` is one of them
