@@ -5,7 +5,7 @@ const LayoutContainer = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: 100%;
+  padding: 10px;
 `
 
 const Content = styled.div`

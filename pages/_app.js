@@ -1,9 +1,11 @@
 import React from 'react'
 import App from 'next/app'
+import Head from 'next/head'
 
 import Nav from '../components/Header'
 import Footer from '../components/Footer'
-import Head from 'next/head'
+
+import '../styles/normalize.css'
 
 class MyApp extends App {
   render() {

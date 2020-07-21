@@ -19,14 +19,14 @@ export default () => (
     <div>
       <Link href="/">
         <NavBarItem title="Home">
-          <h1>Home</h1>
+          <h2>Home</h2>
         </NavBarItem>
       </Link>
     </div>
     <div>
       <Link href="/communities/apage">
         <NavBarItem title="A Page">
-          <h1>A Page</h1>
+          <h2>A Page</h2>
         </NavBarItem>
       </Link>
     </div>
