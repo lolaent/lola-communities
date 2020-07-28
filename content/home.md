@@ -3,7 +3,6 @@ title: Lola.tech Communities
 date: 2019-03-17T19:31:20.591Z
 cats: []
 ---
-# communities.lola.tech
 
 *At Lola our communities are where we learn and grow. Each one is intended to be a supportive environment where individuals can improve their skills and where we can demonstrate our collective strengths.*
 
