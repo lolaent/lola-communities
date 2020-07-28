@@ -1,33 +1,11 @@
 ---
 title: Lola.tech Communities
 date: 2019-03-17T19:31:20.591Z
-cats:
-  - description: Maru is a Scottish Fold from Japan, and he loves boxes.
-    name: Maru (まる)
-  - description: Lil Bub is an American celebrity cat known for her unique appearance.
-    name: Lil Bub
-  - description: Grumpy cat is an American celebrity cat known for her grumpy appearance.
-    name: Grumpy cat (Tardar Sauce)
-  - name: Lola Cat
-    description: A test cat
-  - name: Korky
-    description: Henry's cat. RIP
+cats: []
 ---
 # communities.lola.tech
 
 *At Lola our communities are where we learn and grow. Each one is intended to be a supportive environment where individuals can improve their skills and where we can demonstrate our collective strengths.*
-
-## Communities
-
-A directory of our current communities, plus all you need to know about starting a new one.
-
-## Events
-
-A listing of community events, help for event organisers, and some ideas to inspire you.
-
-## Participation
-
-How to get involved, how to manage community time, and how communities help to grow your career.
 
 ## Changes
 
