@@ -1,11 +1,11 @@
-import Head from 'next/head'
-import React, { Component } from 'react'
-import { attributes, react as HomeContent } from '../../content/aPage.md'
-import Layout from '../../components/Layout'
+import Head from 'next/head';
+import React, { Component } from 'react';
+import { attributes, react as HomeContent } from '../../content/aPage.md';
+import Layout from '../../components/Layout';
 
 export default class Home extends Component {
   render() {
-    let { title, cats } = attributes
+    let { title, cats } = attributes;
     return (
       <>
         <Head>
@@ -27,6 +27,6 @@ export default class Home extends Component {
           </article>
         </Layout>
       </>
-    )
+    );
   }
 }

@@ -1,3 +1,3 @@
-const { createNowBeginHandler } = require('netlify-cms-oauth-provider-node')
+const { createNowBeginHandler } = require('netlify-cms-oauth-provider-node');
 
-module.exports = createNowBeginHandler({}, { useEnv: true })
+module.exports = createNowBeginHandler({}, { useEnv: true });
