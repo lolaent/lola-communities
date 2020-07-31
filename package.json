@@ -30,6 +30,7 @@
   },
   "husky": {
     "hooks": {
+      "commit-msg": "commitlint -e",
       "pre-commit": "lint-staged"
     }
   },
@@ -53,6 +54,8 @@
     "styled-components": "5.1.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "9.1.1",
+    "@commitlint/config-conventional": "9.1.1",
     "frontmatter-markdown-loader": "3.6.0",
     "prop-types": "15.7.2",
     "prettier": "2.0.5",
