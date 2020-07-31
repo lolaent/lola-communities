@@ -1,12 +1,12 @@
 # Description
 
-A `nextJS`  & `netlify CMS` app with the purpose of having a fast developed easy to manage lola communities website.
+A `nextJS` & `netlify CMS` app with the purpose of having a fast developed easy to manage lola communities website.
 
 ## Installation & Startup
 
-*You'll need an up-to-date node version (ideally managed with [nvm](https://github.com/nvm-sh/nvm)) and Git >= 2.20.0 and you'll need yarn installed in your node instance (`npm i -g yarn`)*
+_You'll need an up-to-date node version (ideally managed with [nvm](https://github.com/nvm-sh/nvm)) and Git >= 2.20.0 and you'll need yarn installed in your node instance (`npm i -g yarn`)_
 
-- clone the project:  `git clone git@github.com:lolaent/lola-communities.git`
+- clone the project: `git clone git@github.com:lolaent/lola-communities.git`
 - use the required node version for the project `nvm use`
 - install the needed dependencies: `yarn`
 - start the project using `yarn dev`
@@ -16,7 +16,7 @@ A `nextJS`  & `netlify CMS` app with the purpose of having a fast developed easy
 
 There will be both dev commits as well as commits from Netlify on behalf of users who edit content from the cms.
 
-Netlify's way of updating content is through commits since the content  as well as the content model lives inside the project (see more below).
+Netlify's way of updating content is through commits since the content as well as the content model lives inside the project (see more below).
 
 ## Build & Deploy
 
@@ -31,8 +31,9 @@ This might change in the future perhaps by adding google auth.
 
 The CMS can be used in one of two ways:
 
-- login locally via `http://localhost:8080/admin/index.html#/`  after running the local CMS
-- login in production via `https://lola-communities.vercel.app/admin/#/`
+- login locally via `http://localhost:8080/admin/index.html` after running `yarn dev` _Changes you publish via the CMS in this mode will be written to your filesystem, and it is up to you to commit them and make a pull request._
+
+- login in production via `https://lola-communities.vercel.app/admin/#/` _Changes you make via the CMS in this mode will result in commits against the `master` branch in the github repo._
 
 Note that to modify the content the CMS is not necessarily needed as `.md` files storing pages data can be found inside the `/content` folder.
 
@@ -55,8 +56,9 @@ This setup is in no way set in stone, currently it's just an initial setup so fe
 - need to start implementing some common components for common elements found in the design once it exists
 - add media storing service for images, can be done in many ways, `cloudinary` is one of them
 
-```media_library:
+````media_library:
    name: cloudinary
    config:
      cloud_name: ""
      api_key:""```
+````
