@@ -1,12 +1,14 @@
+site_url: https://lola-communities.vercel.app/
+
 backend:
   name: github
   repo: lolaent/lola-communities
   branch: master
   base_url: https://lola-communities.vercel.app/
   auth_endpoint: api/begin
-
-site_url: https://lola-communities.vercel.app/
 local_backend: true
+publish_mode: editorial_workflow
+
 media_folder: public/img
 public_folder: img
 
