@@ -56,9 +56,9 @@ This setup is in no way set in stone, currently it's just an initial setup so fe
 - need to start implementing some common components for common elements found in the design once it exists
 - add media storing service for images, can be done in many ways, `cloudinary` is one of them
 
-````media_library:
+```media_library:
    name: cloudinary
    config:
      cloud_name: ""
-     api_key:""```
-````
+     api_key:""
+```
