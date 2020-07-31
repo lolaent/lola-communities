@@ -1,11 +1,18 @@
-site_url: https://lola-communities.vercel.app/
+site_url: https://lola-communities.vercel.app
+display_url: https://lola-communities.vercel.app
 
 backend:
   name: github
   repo: lolaent/lola-communities
   branch: master
-  base_url: https://lola-communities.vercel.app/
+  base_url: https://lola-communities.vercel.app
   auth_endpoint: api/begin
+  commit_messages:
+    create: "feat: add {{collection}} {{slug}}"
+    update: "fix: update {{collection}} {{slug}}"
+    delete: "fix: remove {{collection}} {{slug}}"
+    uploadMedia: "feat: add media {{path}}"
+    deleteMedia: "fix: remove media {{path}}"
 local_backend: true
 publish_mode: editorial_workflow
 
@@ -19,6 +26,7 @@ collections:
       - label: "Home"
         name: "home"
         file: "content/home.md"
+        preview_path: "/"
         fields:
           - { label: "Title", name: "title", widget: "string"}
           - { label: "Publish Date", name: "date", widget: "datetime" }
