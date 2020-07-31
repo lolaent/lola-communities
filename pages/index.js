@@ -1,32 +1,23 @@
-import Head from 'next/head'
-import React, { Component } from 'react'
-import { attributes, react as HomeContent } from '../content/home.md'
-import Layout from '../components/Layout'
+import Head from 'next/head';
+import React, { Component } from 'react';
+import { attributes, react as HomeContent } from '../content/home.md';
+import Layout from '../components/Layout';
 
 export default class Home extends Component {
   render() {
-    let { title, cats } = attributes
+    let { title } = attributes;
     return (
       <>
         <Head>
-          <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
+          <title>Lola Tech Communities: {title}</title>
         </Head>
         <Layout>
           <article>
             <h1>{title}</h1>
             <HomeContent />
-            <ul>
-              {cats.map((cat, k) => (
-                <li key={k}>
-                  <h2>{cat.name}</h2>
-                  <p>{cat.description}</p>
-                  <p>{cat.age}</p>
-                </li>
-              ))}
-            </ul>
           </article>
         </Layout>
       </>
-    )
+    );
   }
 }
