@@ -1,6 +1,6 @@
-import React from 'react'
-import Link from 'next/link'
-import styled from 'styled-components'
+import React from 'react';
+import Link from 'next/link';
+import styled from 'styled-components';
 
 const NavBarContainer = styled.nav`
   background-color: lightblue;
@@ -8,11 +8,11 @@ const NavBarContainer = styled.nav`
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-`
+`;
 
 const NavBarItem = styled.a`
   color: white;
-`
+`;
 
 export default () => (
   <NavBarContainer>
@@ -23,12 +23,5 @@ export default () => (
         </NavBarItem>
       </Link>
     </div>
-    <div>
-      <Link href="/communities/apage">
-        <NavBarItem title="A Page">
-          <h2>A Page</h2>
-        </NavBarItem>
-      </Link>
-    </div>
   </NavBarContainer>
-)
+);
