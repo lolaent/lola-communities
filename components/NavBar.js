@@ -16,12 +16,11 @@ const NavBarItem = styled.a`
 
 export default () => (
   <NavBarContainer>
-    <div>
-      <Link href="/">
-        <NavBarItem title="Home">
-          <h2>Home</h2>
-        </NavBarItem>
-      </Link>
-    </div>
+    <Link href="/" passHref>
+      <NavBarItem>Home</NavBarItem>
+    </Link>
+    <Link href="/starting-a-community" passHref>
+      <NavBarItem>Starting a Community</NavBarItem>
+    </Link>
   </NavBarContainer>
 );
