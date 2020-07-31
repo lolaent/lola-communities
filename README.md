@@ -33,7 +33,7 @@ The CMS can be used in one of two ways:
 
 - login locally via `http://localhost:8080/admin/index.html` after running `yarn dev` _Changes you publish via the CMS in this mode will be written to your filesystem, and it is up to you to commit them and make a pull request._
 
-- login in production via `https://lola-communities.vercel.app/admin/#/` _Changes you make via the CMS in this mode will result in commits against the `master` branch in the github repo._
+- login in production via `https://lola-communities.vercel.app/admin/#/` _Changes you make via the CMS in this mode will result in pull requests against the default branch in the github repo._
 
 Note that to modify the content the CMS is not necessarily needed as `.md` files storing pages data can be found inside the `/content` folder.
 
