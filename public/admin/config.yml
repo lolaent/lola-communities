@@ -39,3 +39,28 @@ collections:
           - { label: "Title", name: "title", widget: "string"}
           - { label: "Publish Date", name: "date", widget: "datetime" }
           - { label: "Body", name: "body", widget: "markdown"}
+  - name: "communities"
+    label: "Communities"
+    label_singular: "Community"
+    description: "Individual community pages"
+    folder: "content/communities"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: name
+    fields:
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Purpose", name: "body", widget: "markdown"}
+      - label: "Email"
+        name: "email"
+        widget: "string"
+        required: false
+        pattern:
+          - '^$|^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$'
+          - "Must be a valid email address"
+      - label: "Slack"
+        name: "slack"
+        widget: "string"
+        required: false
+        pattern:
+          - '^$|^((([A-Za-z]{3,9}:(?:\/\/)?)(?:[\-;:&=\+\$,\w]+@)?[A-Za-z0-9\.\-]+|(?:www\.|[\-;:&=\+\$,\w]+@)[A-Za-z0-9\.\-]+)((?:\/[\+~%\/\.\w\-_]*)?\??(?:[\-\+=&;%@\.\w_]*)#?(?:[\.\!\/\\\w]*))?)$' # source http://urlregex.com
+          - "Must be a valid url"
