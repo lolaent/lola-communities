@@ -49,7 +49,7 @@
     "babel-plugin-styled-components": "1.10.7",
     "frontmatter-markdown-loader": "3.6.0",
     "netlify-cms-oauth-provider-node": "1.1.0",
-    "next": "9.5.1",
+    "next": "9.5.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "styled-components": "5.1.1"
