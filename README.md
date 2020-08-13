@@ -18,6 +18,12 @@ There will be both dev commits as well as commits from Netlify on behalf of user
 
 Netlify's way of updating content is through commits since the content as well as the content model lives inside the project (see more below).
 
+Commit format example:
+feat(com-31): added a cms log in link to the header
+type(optional scope): message
+
+For in-depth information on the commit lint rules, see: https://www.conventionalcommits.org/en/v1.0.0/
+
 ## Build & Deploy
 
 `Vercel` is wired up to the repo and automatically deploys to production any changes done to `master`.
