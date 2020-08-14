@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import styled from 'styled-components';
+
 const NavBarContainer = styled.nav`
   background-color: lightblue;
   color: white;
@@ -21,7 +22,7 @@ const NavBar = () => (
     <Link href="/starting-a-community" passHref>
       <NavBarItem>Starting a Community</NavBarItem>
     </Link>
-    <Link href="/admin" passHref>
+    <Link href="/admin/index.html" passHref>
       <NavBarItem>Log In</NavBarItem>
     </Link>
   </NavBarContainer>
