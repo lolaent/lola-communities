@@ -14,7 +14,7 @@ const NavBarItem = styled.a`
   color: white;
 `;
 
-export default () => (
+const NavBar = () => (
   <NavBarContainer>
     <Link href="/" passHref>
       <NavBarItem>Home</NavBarItem>
@@ -22,5 +22,9 @@ export default () => (
     <Link href="/starting-a-community" passHref>
       <NavBarItem>Starting a Community</NavBarItem>
     </Link>
+    <Link href="/admin/index.html" passHref>
+      <NavBarItem>Log In</NavBarItem>
+    </Link>
   </NavBarContainer>
 );
+export default NavBar;
