@@ -41,6 +41,8 @@ The CMS can be used in one of two ways:
 
 - login in production via `https://lola-communities.vercel.app/admin/#/` _Changes you make via the CMS in this mode will result in pull requests against the default branch in the github repo._
 
+- to use the media library you need to be logged in to the [Cloudinary](https://cloudinary.com/console) account. The login credentials can be found in 1password.
+
 Note that to modify the content the CMS is not necessarily needed as `.md` files storing pages data can be found inside the `/content` folder.
 
 ## Architecture
