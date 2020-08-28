@@ -26,7 +26,7 @@ For in-depth information on the commit lint rules, see: https://www.conventional
 
 ## Build & Deploy
 
-`Vercel` is wired up to the repo and automatically deploys to production any changes done to `master`.
+`Vercel` is wired up to the repo and automatically deploys to production any changes done to `main`.
 
 Vercel will also deploy & serve from a commit/branch.
 
