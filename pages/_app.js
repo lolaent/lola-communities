@@ -5,6 +5,10 @@ import Head from 'next/head'
 import Nav from '../components/Header'
 import Footer from '../components/Footer'
 
+// Import slick css files
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+
 import '../styles/normalize.css'
 
 class MyApp extends App {
