@@ -4,7 +4,7 @@ display_url: https://lola-communities.vercel.app
 backend:
   name: github
   repo: lolaent/lola-communities
-  branch: master
+  branch: main
   base_url: https://lola-communities.vercel.app
   auth_endpoint: api/begin
   commit_messages:
