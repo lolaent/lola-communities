@@ -10,7 +10,6 @@ _You'll need an up-to-date node version (ideally managed with [nvm](https://gith
 - use the required node version for the project `nvm use`
 - install the needed dependencies: `yarn`
 - start the project using `yarn dev`
-- run the cms locally (only use if the csm interface is needed) using `yarn run localcms`
 
 ## Committing
 
@@ -19,6 +18,7 @@ There will be both dev commits as well as commits from Netlify on behalf of user
 Netlify's way of updating content is through commits since the content as well as the content model lives inside the project (see more below).
 
 Commit format example:
+
 feat(com-31): added a cms log in link to the header
 type(optional scope): message
 
@@ -28,7 +28,7 @@ For in-depth information on the commit lint rules, see: https://www.conventional
 
 `Vercel` is wired up to the repo and automatically deploys to production any changes done to `main`.
 
-Vercel will also deploy & serve from a commit/branch.
+Vercel will also deploy & serve from any commit/branch.
 
 ## Using the CMS
 
@@ -60,11 +60,3 @@ This setup is in no way set in stone, currently it's just an initial setup so fe
 - add perhaps grid system
 - dig more into how the pages should be structured
 - need to start implementing some common components for common elements found in the design once it exists
-- add media storing service for images, can be done in many ways, `cloudinary` is one of them
-
-```media_library:
-   name: cloudinary
-   config:
-     cloud_name: ""
-     api_key:""
-```
