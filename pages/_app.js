@@ -1,19 +1,19 @@
-import React from 'react'
-import App from 'next/app'
-import Head from 'next/head'
+import React from 'react';
+import App from 'next/app';
+import Head from 'next/head';
 
-import Nav from '../components/Header'
-import Footer from '../components/Footer'
+import Nav from '../components/Header';
+import Footer from '../components/Footer';
 
 // Import slick css files
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
-import '../styles/normalize.css'
+import '../styles/normalize.css';
 
 class MyApp extends App {
   render() {
-    const { Component, pageProps } = this.props
+    const { Component, pageProps } = this.props;
     return (
       <>
         <Head>
@@ -29,8 +29,8 @@ class MyApp extends App {
         </main>
         <Footer />
       </>
-    )
+    );
   }
 }
 
-export default MyApp
+export default MyApp;

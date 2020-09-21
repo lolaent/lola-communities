@@ -2,8 +2,8 @@ import Head from 'next/head';
 import React, { Component } from 'react';
 import { attributes, react as HomeContent } from '../content/home.md';
 import Layout from '../components/Layout';
-import CommunitiesCarousel from "../components/CommunitiesCarousel";
-import {getContentCollection} from "../lib/cms";
+import CommunitiesCarousel from '../components/CommunitiesCarousel';
+import { getContentCollection } from '../lib/cms';
 
 export default class Home extends Component {
   render() {
@@ -32,6 +32,5 @@ export async function getStaticProps({ params }) {
     props: {
       communities,
     },
-  }
+  };
 }
-
