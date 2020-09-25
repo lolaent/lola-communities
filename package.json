@@ -48,10 +48,13 @@
   "dependencies": {
     "babel-plugin-styled-components": "1.11.1",
     "frontmatter-markdown-loader": "3.6.0",
+    "gray-matter": "4.0.2",
     "netlify-cms-oauth-provider-node": "1.1.0",
     "next": "9.5.3",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-slick": "0.27.11",
+    "slick-carousel": "1.8.1",
     "styled-components": "5.2.0"
   },
   "devDependencies": {

@@ -19,6 +19,13 @@ publish_mode: editorial_workflow
 media_folder: public/img
 public_folder: img
 
+media_library:
+  name: cloudinary
+  output_filename_only: false
+  config:
+    cloud_name: dzypedzhp
+    api_key: 866969769554875
+
 collections:
   - name: "pages"
     label: "Pages"
@@ -49,6 +56,7 @@ collections:
     identifier_field: name
     fields:
       - {label: "Name", name: "name", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
       - {label: "Purpose", name: "body", widget: "markdown"}
       - label: "Email"
         name: "email"
