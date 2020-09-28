@@ -23,8 +23,8 @@ media_library:
   name: cloudinary
   output_filename_only: false
   config:
-    cloud_name: dzypedzhp
-    api_key: 866969769554875
+    cloud_name: lolatech
+    api_key: 277628224366354
 
 collections:
   - name: "pages"
