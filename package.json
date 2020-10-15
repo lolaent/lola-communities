@@ -51,8 +51,8 @@
     "gray-matter": "4.0.2",
     "netlify-cms-oauth-provider-node": "1.1.0",
     "next": "9.5.4",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
+    "react": "16.14.0",
+    "react-dom": "16.14.0",
     "react-slick": "0.27.11",
     "slick-carousel": "1.8.1",
     "styled-components": "5.2.0"
