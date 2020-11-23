@@ -1,3 +1,23 @@
 {
-  "extends": ["config:base"]
+  "extends": ["config:base"],
+  "stabilityDays": 3,
+  "dependencyDashboard": true,
+  "prCreation": "not-pending",
+  "semanticCommits": true,
+  "packageRules": [
+    {
+      "depTypeList": ["devDependencies"],
+      "semanticCommitType": "chore"
+    },
+    {
+      "depTypeList": ["dependencies"],
+      "semanticCommitType": "fix"
+    },
+    {
+      "depTypeList": ["devDependencies"],
+      "updateTypes": ["minor", "patch", "pin", "digest"],
+      "semanticCommitType": "chore",
+      "automerge": true
+    }
+  ]
 }
