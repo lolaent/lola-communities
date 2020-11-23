@@ -42,7 +42,7 @@
     "lint": "eslint ."
   },
   "resolutions": {
-    "styled-components": "5.2.0"
+    "styled-components": "5.2.1"
   },
   "dependencies": {
     "babel-plugin-styled-components": "1.11.1",
@@ -54,7 +54,7 @@
     "react-dom": "17.0.1",
     "react-slick": "0.27.12",
     "slick-carousel": "1.8.1",
-    "styled-components": "5.2.0"
+    "styled-components": "5.2.1"
   },
   "devDependencies": {
     "@commitlint/cli": "11.0.0",
