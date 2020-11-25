@@ -32,7 +32,7 @@ collections:
     files:
       - label: "Home"
         name: "home"
-        file: "content/home.md"
+        file: "content/pages/home.md"
         preview_path: "/"
         fields:
           - { label: "Title", name: "title", widget: "string"}
@@ -40,7 +40,7 @@ collections:
           - { label: "Body", name: "body", widget: "markdown"}
       - label: "Starting a Community"
         name: "starting-a-community"
-        file: "content/starting-a-community.md"
+        file: "content/pages/starting-a-community.md"
         preview_path: "/"
         fields:
           - { label: "Title", name: "title", widget: "string"}
