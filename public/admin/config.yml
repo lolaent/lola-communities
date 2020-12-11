@@ -59,14 +59,16 @@ collections:
     identifier_field: name
     fields:
       - {label: "Name", name: "name", widget: "string"}
-      - {label: "Intro text", name: "intro", widget: "markdown"}
+      - {label: "Intro text", name: "intro", widget: "markdown", required: false}
       - label: "Events"
         name: "events"
         widget: "list"
+        required: false
       - label: Members   
         name: "members"
         widget: "list" 
-      - {label: "CTA to Join", name: "ctaJoin", widget: "markdown"}
+        required: false
+      - {label: "CTA to Join", name: "ctaJoin", widget: "markdown", required: false}
       - {label: "Image", name: "image", widget: "image", required: false}
       - label: "Email"
         name: "email"
