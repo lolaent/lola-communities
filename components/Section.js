@@ -7,9 +7,12 @@ const Wrapper = styled.div`
   padding: 80px 0;
 `;
 const SectionHeading = styled.h2`
-  color: ${(props) => (props.titleColor ? props.titleColor : 'var(--text)')};
+  color: transparent;
   text-align: center;
   margin-bottom: 40px;
+  background: ${(props) => (props.titleColor ? props.titleColor : 'var(--text-color)')};
+  background-clip: text;
+  -webkit-background-clip: text;
 `;
 
 const Section = ({ bgColor, title, titleColor, ...props }) => (

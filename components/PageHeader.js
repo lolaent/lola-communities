@@ -12,13 +12,16 @@ const PageTitle = styled.h1`
   font-size: 48px;
   line-height: 1.1;
   font-weight: bold;
-  background: linear-gradient(top left var(--primary) var(--secondary));
-  color: var(--secondary);
+  background: linear-gradient(to right bottom, var(--primary), var(--secondary));
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin-bottom: 60px;
+
   & span {
     display: block;
     font-size: 21px;
   }
-  margin-bottom: 60px;
 
   @media (min-width: 600px) {
     font-size: 72px;
