@@ -1,7 +1,8 @@
 import Head from 'next/head';
 import React from 'react';
-import Layout from '../components/Layout';
-import CommunitiesCarousel from '../components/CommunitiesCarousel';
+import PageHeader from '../components/PageHeader';
+import Section from '../components/Section';
+import CommunitiesGrid from '../components/CommunitiesGrid';
 import { getContentBySlug, getContentCollection } from '../lib/cms';
 import markdownToHtml from '../lib/markdownToHtml';
 
@@ -10,20 +11,14 @@ const Home = ({ pageTitle, smallTitle, title, intro, eventsTitle, events, copTit
     <Head>
       <title>Lola Tech Communities: {pageTitle}</title>
     </Head>
-    <Layout>
-      <div>
-        <span>{smallTitle}</span>
-        <h1>{title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: intro }} />
-      </div>
-      <div>
-        <h2>{copTitle}</h2>
-        <CommunitiesCarousel communities={communities} />
-      </div>
-      <div>
-        <h2>{eventsTitle}</h2>
-      </div>
-    </Layout>
+    <PageHeader smallTitle={smallTitle} title={title} intro={intro} />
+    <Section title={copTitle} titleColor={'var(--secondary)'}>
+      <CommunitiesGrid communities={communities} />
+    </Section>
+    <Section
+      title={eventsTitle}
+      bgColor={' linear-gradient(to right bottom, var(--primary-light), var(--secondary-light))'}
+    ></Section>
   </>
 );
 

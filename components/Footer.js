@@ -1,13 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
+import Container from './Container';
 
-const FooterContainer = styled.div`
-  color: darkred;
-  height: 60px;
-  width: 100%;
-  background-color: papayawhip;
+const FooterSection = styled.div`
+  padding: 20px 0;
+  background: #eee;
 `;
 
-const Footer = () => <FooterContainer>Footer</FooterContainer>;
+const Footer = () => (
+  <FooterSection>
+    <Container wide>Footer</Container>
+  </FooterSection>
+);
 
 export default Footer;

@@ -2,14 +2,16 @@ import React from 'react';
 import App from 'next/app';
 import Head from 'next/head';
 
-import Nav from '../components/Header';
+import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
+import FullHeightPage, { ExpandingContent } from '../components/FullHeightPage';
 
 // Import slick css files
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 import '../styles/normalize.css';
+import '../styles/generalstyles.css';
 
 class MyApp extends App {
   render() {
@@ -23,11 +25,15 @@ class MyApp extends App {
             content="Lola communities is a place to keep in touch with your favourite tech community"
           />
         </Head>
-        <Nav />
-        <main>
-          <Component {...pageProps} />
-        </main>
-        <Footer />
+        <FullHeightPage>
+          <NavBar />
+          <ExpandingContent>
+            <main>
+              <Component {...pageProps} />
+            </main>
+          </ExpandingContent>
+          <Footer />
+        </FullHeightPage>
       </>
     );
   }
