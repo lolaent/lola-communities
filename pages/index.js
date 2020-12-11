@@ -5,17 +5,24 @@ import CommunitiesCarousel from '../components/CommunitiesCarousel';
 import { getContentBySlug, getContentCollection } from '../lib/cms';
 import markdownToHtml from '../lib/markdownToHtml';
 
-const Home = ({ title, content, communities }) => (
+const Home = ({ pageTitle, smallTitle, title, intro, eventsTitle, events, copTitle, communities }) => (
   <>
     <Head>
-      <title>Lola Tech Communities: {title}</title>
+      <title>Lola Tech Communities: {pageTitle}</title>
     </Head>
     <Layout>
-      <article>
+      <div>
+        <span>{smallTitle}</span>
         <h1>{title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: content }} />
-      </article>
-      <CommunitiesCarousel communities={communities} />
+        <div dangerouslySetInnerHTML={{ __html: intro }} />
+      </div>
+      <div>
+        <h2>{copTitle}</h2>
+        <CommunitiesCarousel communities={communities} />
+      </div>
+      <div>
+        <h2>{eventsTitle}</h2>
+      </div>
     </Layout>
   </>
 );
@@ -23,15 +30,19 @@ const Home = ({ title, content, communities }) => (
 export default Home;
 
 export async function getStaticProps({ params }) {
-  const { data, content: md } = getContentBySlug('pages', 'home');
-  const content = await markdownToHtml(md);
+  const { data } = getContentBySlug('pages', 'home');
+  const intro = await markdownToHtml(data.intro);
   const communities = getContentCollection('communities');
 
   return {
     props: {
+      pageTitle: `${data.stitle} ${data.title}`,
+      smallTitle: data.stitle,
       title: data.title,
-      content,
+      intro: intro,
+      copTitle: data.copTitle,
       communities,
+      eventsTitle: data.eventsTitle,
     },
   };
 }
