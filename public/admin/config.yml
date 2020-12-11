@@ -35,17 +35,20 @@ collections:
         file: "content/pages/home.md"
         preview_path: "/"
         fields:
-          - { label: "Title", name: "title", widget: "string"}
-          - { label: "Publish Date", name: "date", widget: "datetime" }
-          - { label: "Body", name: "body", widget: "markdown"}
+          - {label: "Small Title", name: "stitle" , widget: "string", required: false}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Intro Text", name: "intro", widget: "markdown"}
+          - {label: "CoP Section Title", name: "copTitle", widget: "string"}
+          - {label: "Events Section Title", name: "eventsTitle", widget: "string"}
+          - {label: "Publish Date", name: "date", widget: "datetime" , required: false}
       - label: "Starting a Community"
         name: "starting-a-community"
         file: "content/pages/starting-a-community.md"
         preview_path: "/"
         fields:
-          - { label: "Title", name: "title", widget: "string"}
-          - { label: "Publish Date", name: "date", widget: "datetime" }
-          - { label: "Body", name: "body", widget: "markdown"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Publish Date", name: "date", widget: "datetime" }
+          - {label: "Body", name: "body", widget: "markdown"}
   - name: "communities"
     label: "Communities"
     label_singular: "Community"
@@ -56,8 +59,15 @@ collections:
     identifier_field: name
     fields:
       - {label: "Name", name: "name", widget: "string"}
-      - {label: "Image", name: "image", widget: "image"}
-      - {label: "Purpose", name: "body", widget: "markdown"}
+      - {label: "Intro text", name: "intro", widget: "markdown"}
+      - label: "Events"
+        name: "events"
+        widget: "list"
+      - label: Members   
+        name: "members"
+        widget: "list" 
+      - {label: "CTA to Join", name: "ctaJoin", widget: "markdown"}
+      - {label: "Image", name: "image", widget: "image", required: false}
       - label: "Email"
         name: "email"
         widget: "string"
@@ -72,3 +82,17 @@ collections:
         pattern:
           - '^$|^((([A-Za-z]{3,9}:(?:\/\/)?)(?:[\-;:&=\+\$,\w]+@)?[A-Za-z0-9\.\-]+|(?:www\.|[\-;:&=\+\$,\w]+@)[A-Za-z0-9\.\-]+)((?:\/[\+~%\/\.\w\-_]*)?\??(?:[\-\+=&;%@\.\w_]*)#?(?:[\.\!\/\\\w]*))?)$' # source http://urlregex.com
           - "Must be a valid url"
+  - name: "events"
+    label: "Events"
+    label_singular: "Event"
+    description: "Individual event pages"
+    folder: "content/events"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: name
+    fields:
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Host", name: "host", widget: "string"}
+      - {label: "Content", name: "content", widget: "markdown" , required: false}
