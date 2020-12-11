@@ -1,6 +1,12 @@
 ---
-title: Lola.tech Communities
-date: 2020-07-31T10:41:57.150Z
+stitle: 'Welcome to '
+title: Communities
+intro: At Lola, our communities are where we learn and grow. Each one is
+  intended to be a supportive environment where individuals can improve their
+  skills and where we can demonstrate our collective strengths.
+copTitle: Explore our Communities of Practice (CoP)
+eventsTitle: Upcoming Events
+date: 2020-12-11T14:53:12.200Z
 ---
 
 _At Lola our communities are where we learn and grow. Each one is intended to be a supportive environment where individuals can improve their skills and where we can demonstrate our collective strengths._
