@@ -4856,10 +4856,10 @@ netlify-cms-oauth-provider-node@1.1.0:
     simple-oauth2 "^3.1.0"
     verror "^1.10.0"
 
-netlify-cms-proxy-server@1.3.12:
-  version "1.3.12"
-  resolved "https://registry.yarnpkg.com/netlify-cms-proxy-server/-/netlify-cms-proxy-server-1.3.12.tgz#38932a478e2da9945a32b2041621d235815feb70"
-  integrity sha512-y2ngjbwakN4R5FZjKvv4AogxoCt7cIZ+aQ0YwZnVIXVdkaZiCNQdgSbrjp+IYpiY2wWTZN2GLoJZmIhDhcOUGQ==
+netlify-cms-proxy-server@1.3.13:
+  version "1.3.13"
+  resolved "https://registry.yarnpkg.com/netlify-cms-proxy-server/-/netlify-cms-proxy-server-1.3.13.tgz#3422f5f222c9a89e6e42a41e39bfe4fbcebc1094"
+  integrity sha512-SdXqV5pJiw/aGZnWr+S/T25GVfqHBj1kBU0VuxraS7qqvNxGjtIINsXc8BlJ5Jd882Z9scBiwArMKreVuJUu1w==
   dependencies:
     "@hapi/joi" "^17.0.2"
     async-mutex "^0.3.0"
