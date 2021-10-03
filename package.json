@@ -46,7 +46,7 @@
   },
   "dependencies": {
     "babel-plugin-styled-components": "1.12.0",
-    "gray-matter": "4.0.2",
+    "gray-matter": "4.0.3",
     "netlify-cms-oauth-provider-node": "1.1.0",
     "next": "10.0.3",
     "react": "17.0.1",
