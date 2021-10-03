@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import React from 'react';
-import Layout from '../components/Layout';
+import PageHeader from '../components/PageHeader';
+import Section from '../components/Section';
+
 import { getContentBySlug } from '../lib/cms';
 import markdownToHtml from '../lib/markdownToHtml';
 
@@ -9,12 +11,10 @@ const CommunityAdvice = ({ title, content }) => (
     <Head>
       <title>Lola Tech Communities: {title}</title>
     </Head>
-    <Layout>
-      <article>
-        <h1>{title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: content }} />
-      </article>
-    </Layout>
+    <PageHeader title={title} />
+    <Section>
+      <div dangerouslySetInnerHTML={{ __html: content }} />
+    </Section>
   </>
 );
 
